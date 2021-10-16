@@ -14,7 +14,10 @@ Para la creación de esta página utilizamos variaas tecnologías:
 ## Diseño
 ### Diseño home para pc
 ![OpenWeather Asier Elorza](img-readme/app-pc.png)
+### Diseño página funcionando pc
+![OpenWeather Asier Elorza](img-readme/app-pc2.png)
 
 ### Diseño home para mobile
 ![OpenWeather Asier Elorza](img-readme/app-mobile.png)
-
+### Diseño página funcionando mobil
+![OpenWeather Asier Elorza](img-readme/app-mobile2.png)
