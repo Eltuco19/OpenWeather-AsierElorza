@@ -6,6 +6,7 @@ Openweahter es una página web del tiempo estilo **Single Page Aplication (SPA)*
 
 ## Tecnologias Utilizadas
 Para la creación de esta página utilizamos variaas tecnologías:
+- **HTML**, toda la página web.
 - **Jquery**, para la implementación de la API y hacer la página funcional.
 - **Sass**, creación del css utilizando variables y mixins.
 - **Boostrap**, dale formato a la página web.
