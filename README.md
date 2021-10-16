@@ -5,4 +5,4 @@ Openweahter es una aplicación del tiempo estilo **Single Page Aplication (SPA)*
 - Current Weather data **(https://openweathermap.org/current)** --> Con las cordenadas de la anterior recogemos todos los datos necesarios de la ciudad que queremos.
 
 ## Diseño de la app
-> Home --> Pantalla principal
+### Home
