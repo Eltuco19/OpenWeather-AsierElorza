@@ -10,5 +10,10 @@ Para la creación de esta página utilizamos variaas tecnologías:
 - **Sass**, creación del css utilizando variables y mixins.
 - **Boostrap**, dale formato a la página web.
 
+## Diseño
+### Diseño home para pc
+![OpenWeather Asier Elorza](img-readme/app-pc.png)
+
+### Diseño home para mobile
 ![OpenWeather Asier Elorza](img-readme/app-mobile.png)
 
