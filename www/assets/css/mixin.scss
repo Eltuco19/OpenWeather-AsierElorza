@@ -1,0 +1,14 @@
+@mixin gradiant-bg($color1, $color2) {
+  background: linear-gradient(0deg, $color1 0%, $color2 100%);
+}
+@mixin image-bg($image, $w, $h, $mt, $o) {
+  content: "";
+  position: absolute;
+  top: $mt;
+  right: 0%;
+  width: $w;
+  height: $h;
+  left: unset;
+  background: url($image) no-repeat;
+  opacity: $o;
+}
