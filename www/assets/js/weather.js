@@ -90,11 +90,10 @@ $(function () {
       "&appid=6a59cda06d896a96b71e06c939253e4b";
     $.get(apiCord, function (city) {
       $("#ciudad").html(city.name);
-      getTemp(lon, lat)
-      
+      getTemp(lon, lat);
     });
   }
-  
+
   function getCity(cityName) {
     var apiCord =
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -106,19 +105,27 @@ $(function () {
       getNameCityCord(lat, lon);
     });
   }
-  
 
   var onSuccess = function (position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
     console.log(lat);
-    console.log(lon)
+    console.log(lon);
+    var titulo =
+      "<div class='row mt-4'>" +
+      "<div id='titulo' class='text-center'>" +
+      "<h1>OpenWeather</h1>" +
+      "<span>By Asier Elorza</span>" +
+      "</div>" +
+      "</div>";
+    $("#tiempo").show();
+    $("#titulo").hide();
+    $("#contenedorTit").html(titulo);
     getNameCityCord(lat, lon);
   };
   function onError(error) {
-    alert('code: '    + error.code    + '\n' +
-          'message: ' + error.message + '\n');
-}
+    alert("code: " + error.code + "\n" + "message: " + error.message + "\n");
+  }
   var contador = 0;
   $("#home").click(function (event) {
     contador = 0;
@@ -146,16 +153,6 @@ $(function () {
     contador += 1;
   });
   $("#location").click(function (event) {
-    var titulo =
-      "<div class='row mt-4'>" +
-      "<div id='titulo' class='text-center'>" +
-      "<h1>OpenWeather</h1>" +
-      "<span>By Asier Elorza</span>" +
-      "</div>" +
-      "</div>";
-    $("#tiempo").show();
-    $("#titulo").hide();
-    $("#contenedorTit").html(titulo);
-    navigator.geolocation.getCurrentPosition(onSuccess);
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
   });
 });
