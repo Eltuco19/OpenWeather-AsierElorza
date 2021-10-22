@@ -18,6 +18,6 @@ Para la creación de esta página utilizamos variaas tecnologías:
 ![OpenWeather Asier Elorza](img-readme/app-pc2.png)
 
 ### Diseño home para mobile
-![OpenWeather Asier Elorza](img-readme/app-mobile.png)
+![OpenWeather Asier Elorza](pageGit/img/owM1.png)
 ### Diseño página funcionando mobil
-![OpenWeather Asier Elorza](img-readme/app-mobile2.png)
+![OpenWeather Asier Elorza](pageGit/img/owM1.png)
