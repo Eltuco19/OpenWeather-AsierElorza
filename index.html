@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eltuco-Weather</title>
+    <link rel="stylesheet" href="./pageGit/style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <header>
+        <a href="#" class="logo"><img src="./pageGit/img/weather.png" /></a>
+        <a href="download/../dist/aelorza_Weather.apk" class="app"><ion-icon name="arrow-down-circle-outline"></ion-icon>Download App</a
+        >
+      </header>
+
+      <div class="contentBx">
+        <div class="text">
+          <h2>OpenWeather</h2>
+          <h3>Descripción</h3>
+          <p>Openweahter es una página web del tiempo estilo Single Page Aplication (SPA) en la que puedes buscar la temperatura y el estado del dia de hoy y los proximos 4 días de la ciudad que eligamos. Para ello esta app utiliza dos api llamadas:</p>
+          <ul>
+              <li>One Call Api (<a href="https://openweathermap.org/api/one-call-api">https://openweathermap.org/api/one-call-api</a>) --> Con esta Api recogemos las coordenadas de la ciudad que introducimos.</li>
+              <li>Current Weather data (<a href="https://openweathermap.org/current">https://openweathermap.org/current</a>) --> Con las cordenadas de la anterior recogemos todos los datos necesarios de la ciudad que queremos.</li>
+          </ul>
+          <h3>Tecnologias Utilizadas</h3>
+          <p>Para la creación de esta página utilizamos variaas tecnologías:</p>
+          <ul>
+              <li>HTML, toda la página web.</li>
+              <li>Jquery, para la implementación de la API y hacer la página funcional.</li>
+              <li>Sass, creación del css utilizando variables y mixins.</li>
+              <li>Boostrap, dale formato a la página web.</li>
+              <li>Cordova, nos permite convertir la pagina en una app móvil</li>
+          </ul>
+          <h4>Use the app</h4>
+          <a href="https://sneakerstuco.000webhostapp.com" class="btn"
+            ><ion-icon name="globe-outline"></ion-icon>Enter the page</a
+          >
+          <a href="download/../dist/aelorza_Weather.apk" class="btn"
+            ><ion-icon name="cloud-download-outline"></ion-icon>Download App</a
+          >
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="imgBx">
+            <img src="./pageGit/img/owPc1.png" class="slides pc active" />
+            <img src="./pageGit/img/owPc2.png" class="slides pc" />
+            <img src="./pageGit/img/owM1.png" class="slides mobile" />
+            <img src="./pageGit/img/owM2.png" class="slides mobile" />
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const slides = document.querySelectorAll(".slides");
+      const dots = document.querySelectorAll(".dot");
+
+      function SetActive(i) {
+        for (slide of slides) 
+        slide.classList.remove('active')
+        slides[i].classList.add('active')
+        for (dot of dots) 
+        dot.classList.remove('active')
+        dots[i].classList.add('active')
+      }
+      for (let j = 0; j < dots.length; j++) {
+        dots[j].addEventListener("click", function () {
+          SetActive(j);
+        });
+      }
+    </script>
+  </body>
+</html>
