@@ -21,4 +21,4 @@ Para la creación de esta página utilizamos variaas tecnologías:
 ![OpenWeather Asier Elorza](pageGit/img/owM1.png)
 ### Diseño página funcionando mobil
 ![OpenWeather Asier Elorza](pageGit/img/owM2.png)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?ElTuco19)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ElTuco19)](https://github.com/anuraghazra/github-readme-stats)
